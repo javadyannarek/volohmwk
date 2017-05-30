@@ -9,16 +9,17 @@
 <body>
     <script>
         function prime(n){
-
-       for(var i=1;i<=n;i++){
-          for(j=2;j<i/2;j++){
-              if(i%j!==0){
-                  console.log(i);
-              }
-          }
-       }
+            if(n>5){
+                for(var i=7; i<=n; i+=2){
+                    if(i%2!==0 && i%3!==0 && i%5!==0){
+                        console.log(i);
+                    }
+                }
+            }else{
+                
+            }
         }
-        prime(11);
+        prime(199);
     </script>
 </body>
 </html>

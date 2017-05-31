@@ -8,16 +8,12 @@
 </head>
 <body>
     <script>
-        var sum=1;
-        function summ(n){
-            if(n!==1){
-                 sum+=n;     
-                 summ(n-1);
-            }
-            return sum;
-        }
-        summ(3);
-        console.log(sum);
+     var year=prompt("Enter the year", "2016");
+     if (year%4===0){
+         alert("Year is leap!")
+     }else{
+          alert("Year isn't leap!")
+     }
     </script>
 </body>
 </html>
